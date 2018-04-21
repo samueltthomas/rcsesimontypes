@@ -23,10 +23,11 @@ RCSE Embedded Systems Lab 2018
 1 Arduino Uno Board <br/>
 2 LCD Screen (compatible with Hitachi HD44780 driver) with PIN headers <br/>
 3 10k ohm potentiometer <br/>
-5 220 ohm resistor x 3 <br/>
-6 Jumper wires x 25 <br/>
-7 Breadboard <br/>
-8 Keyboard with PS2 Connector <br/>
+4 220 ohm resistor x 3 <br/>
+5 Jumper wires x 25 <br/>
+6 Breadboard <br/>
+7 PS2 Keyboard<br/>
+8 PS2 Connector<br/>
 9 Red LED <br/>
 10 Green LED <br/>
 
