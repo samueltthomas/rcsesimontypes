@@ -12,25 +12,28 @@ RCSE Embedded Systems Lab 2018
 3 Set score = 0<br/>
 4 Show a random sequence with (level + 5) number of characters for 2 seconds<br/>
 5 Hide the sequence and prompt the user to enter the sequence <br/>
-6 If the user enters the correct sequence increment the score by 1 (ie score++) else if the answer is wrong go to step 10 <br/>
+6 If the user enters the correct sequence increment the score by 1 (ie score++) and enable Green LED else if the answer is wrong, enable the Red LED and go to step 10 <br/>
 7 If the score is a multiple of 5 (ie score % 5 == 0) increment level by 1 (ie level++) <br/>
-8 Go to Step 4	<br/>
+8 Disable Green LED and Go to Step 4	<br/>
 9 If the user presses "Space Key" to restart the game go to Step 2 <br/>
-10 Show the message "Game Over" along with score <br/>
+10 Disable Red LED and Show the message "Game Over" along with score <br/>
 
 # Required Components
 
-1 Arduino Uno Board 
-2 LCD Screen (compatible with Hitachi HD44780 driver)
-3 pin headers to solder to the LCD display pins
-4 10k ohm potentiometer
-5 220 ohm resistor * 3
-6 hook-up wires
-7 breadboard
-8 PS2 Keyboard
-9 PS2 Keyboard Connector
-10 Red LED
-11 Green LED
+1 Arduino Uno Board <br/>
+2 LCD Screen (compatible with Hitachi HD44780 driver) with PIN headers <br/>
+3 10k ohm potentiometer <br/>
+5 220 ohm resistor x 3 <br/>
+6 Jumper wires x 25 <br/>
+7 Breadboard <br/>
+8 Keyboard with PS2 Connector <br/>
+9 Red LED <br/>
+10 Green LED <br/>
+
+# Reference
+
+https://www.arduino.cc/en/Tutorial/HelloWorld
+https://www.pjrc.com/teensy/td_libs_PS2Keyboard.html
 
 
 	
