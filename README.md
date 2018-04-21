@@ -18,6 +18,10 @@ RCSE Embedded Systems Lab 2018
 9 Red LED <br/>
 10 Green LED <br/>
 
+## Schematic
+
+<img src="simon_types_schematic_schem.svg">
+
 ## Functional Requirements
 
 1 Show the message "Press Enter to Start" until the user presses the "Enter Key"<br/>
