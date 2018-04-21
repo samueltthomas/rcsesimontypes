@@ -20,7 +20,7 @@ RCSE Embedded Systems Lab 2018
 
 ## Schematic
 
-<img width="100%" src="simon_types_schematic_schem.svg">
+<img width="100%" src="simon_types_schematic_schem.jpg">
 
 ## Functional Requirements
 
