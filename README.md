@@ -3,7 +3,7 @@ RCSE Embedded Systems Lab 2018
 
 ## Breadboard
 
-<img src="simon_types_breadboard.svg">
+<img style="width:100%:" src="simon_types_breadboard.svg">
 
 ## Required Components
 
@@ -20,7 +20,7 @@ RCSE Embedded Systems Lab 2018
 
 ## Schematic
 
-<img src="simon_types_schematic_schem.svg">
+<img style="width:100%:" src="simon_types_schematic_schem.svg">
 
 ## Functional Requirements
 
