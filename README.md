@@ -39,7 +39,9 @@ RCSE Embedded Systems Lab 2018
 ## Reference
 
 https://www.arduino.cc/en/Tutorial/HelloWorld <br/>
-https://www.pjrc.com/teensy/td_libs_PS2Keyboard.html <br/>
+https://playground.arduino.cc/Main/PS2Keyboard <br/>
+
+
 
 
 	
