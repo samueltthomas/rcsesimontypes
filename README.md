@@ -29,11 +29,10 @@ RCSE Embedded Systems Lab 2018
 3 Set score = 0<br/>
 4 Show a random sequence with (level + 5) number of characters for 2 seconds<br/>
 5 Hide the sequence and prompt the user to enter the sequence <br/>
-6 If the user enters the correct sequence increment the score by 1 (ie score++) and enable Green LED else if the answer is wrong, enable the Red LED and go to step 10 <br/>
+6 If the user enters the correct sequence increment the score by 1 (ie score++) and blink Green LED else if the answer is wrong, blink the Red LED and go to step 9<br/>
 7 If the score is a multiple of 5 (ie score % 5 == 0) increment level by 1 (ie level++) <br/>
-8 Disable Green LED and Go to Step 4	<br/>
-9 If the user presses "Space Key" to restart the game go to Step 2 <br/>
-10 Disable Red LED and Show the message "Game Over" along with score <br/>
+8 Go to Step 4	<br/>
+9 Show the message "Game Over" along with score <br/>
 
 
 ## Reference
