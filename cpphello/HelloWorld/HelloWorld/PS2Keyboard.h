@@ -11,7 +11,7 @@
 class PS2Keyboard {
 public:
 	void begin(int data_pin) {
-
+		// do nothing
 	}
 	bool available() {
 		return true;

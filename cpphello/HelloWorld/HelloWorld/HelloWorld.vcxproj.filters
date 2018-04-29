@@ -35,7 +35,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HelloWorld.cpp">
+    <ClCompile Include="SimonTypes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
