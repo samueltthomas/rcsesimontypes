@@ -66,9 +66,11 @@ void loop() {
   }
 
 
-  state = 3;
+   state = 3;
+   
   do {
-    score++;
+    
+     score++;
     
     if (score > 0) {
       lcd.fillScreen(RGB(0,  255,  0));
@@ -76,30 +78,48 @@ void loop() {
       lcd.fillScreen(RGB(255,  255,  255));
     }
 
-    random_str = generate_random_string(level + 2);
+    random_str = generate_random_string(level + 4);
     lcd.drawText(100, 80, "PLEASE REMEMBER", 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
     lcd.drawText(100, 110, random_str, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
     delay(2000);
     lcd.fillScreen(RGB(255,  255,  255));
     lcd.drawText(100, 80, "PLEASE TYPE", 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
-
+    
+    
     if(score>0) {
         score_string = "Score : " + String(score);
-        lcd.drawText(200, 0, score_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
+        lcd.drawText(200, 20, score_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
     }
   
     input_str = "";
     input_char = '\0';
 
-    while (input_str.length() < random_str.length()) {
+    while ((input_str.length() < random_str.length())) {
       if (keyboard.available()) {
         input_char = keyboard.read();
-        input_str += input_char;
+
+        if(input_char>96&&input_char<123){
+          input_char = input_char - 32;
+        }
+        
+        if(input_char=='Z'){
+          input_char='Y';
+        }
+        else if(input_char=='Y'){
+          input_char='Z';
+        }
+
+        
+         input_str += input_char;
+        
+      
         lcd.drawText(100, 110, input_str, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
       }
     }
 
-    if (score != 0 && score % 5 == 0) {
+   
+
+    if (score != 0 && (score +1) % 5 == 0) {
       level++;
     }
 
