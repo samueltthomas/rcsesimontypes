@@ -15,7 +15,7 @@ Simon Types is a memory game which shows a random sequence of characters on an L
 
 ## Schematic
 
-<img width="95%" src="schematic.jpg">
+<img width="50%" src="schematic.jpg">
 
 ## Functional Requirements
 
