@@ -1,6 +1,3 @@
-# Simon Types
-RCSE Embedded Systems Lab 2018
-
 ## About
 
 Simon Types is a memory game which shows a random sequence of characters on an LCD screen which should be entered by the user correctly using a keyboard. The score of the user will increase with each correct answer and also the complexity level of the game increases after particular number of correct answers. The game will be over once the user enters an incorrect answer.
