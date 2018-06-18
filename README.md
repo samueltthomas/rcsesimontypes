@@ -21,8 +21,8 @@ Simon Types is a memory game which shows a random sequence of characters on a LC
 3 Set score = 0<br/>
 4 Show a random sequence with (level + 4) number of characters for 2 seconds<br/>
 5 Hide the sequence and prompt the user to enter the sequence <br/>
-6 If the user enters the correct sequence increment the score by 1 (ie score++) else if the answer is wrong go to step 9<br/>
-7 If the score is a multiple of 5 (ie score % 5 == 0) increment level by 1 (ie level++) <br/>
+6 If the user enters the correct sequence increment the score by 1 (i.e. score++) else if the answer is wrong go to step 9<br/>
+7 If the score is a multiple of 5 (i.e. score % 5 == 0) increment level by 1 (i.e. level++) <br/>
 8 Go to Step 4	<br/>
 9 Show the message "Game Over"<br/>
 
