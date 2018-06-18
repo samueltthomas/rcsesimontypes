@@ -1,6 +1,6 @@
 ## About
 
-Simon Types is a memory game which shows a random sequence of characters on an LCD screen which should be entered by the user correctly using a keyboard. The score of the user will increase with each correct answer and also the complexity level of the game increases after particular number of correct answers. The game will be over once the user enters an incorrect answer.
+Simon Types is a memory game which shows a random sequence of characters on a LCD screen which should be entered by the player correctly using a keyboard. The score of the player will increase with each correct sequence and also the complexity level of the game increases after a particular number of correct inputs. The game will be over once the player enters an incorrect sequence.
 
 ## Required Components
 
