@@ -11,10 +11,12 @@ MI0283QT2 lcd;
 String input_str;
 String random_str;
 String score_string;
+String level_string;
 char input_char = '\0';
 
 int level = 0;
 int score = -1;
+long timer;
 
 int state = 0;
 
@@ -79,6 +81,15 @@ void loop() {
     }
 
     random_str = generate_random_string(level + 4);
+    timer = millis(); 
+   
+    score_string = "Score : " + String(score);
+    level_string = "Level : " + String(level);
+    
+    lcd.drawText(220, 20, score_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
+    lcd.drawText(20, 20, level_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
+    
+    
     lcd.drawText(100, 80, "PLEASE REMEMBER", 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
     lcd.drawText(100, 110, random_str, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
     delay(2000);
@@ -86,15 +97,15 @@ void loop() {
     lcd.drawText(100, 80, "PLEASE TYPE", 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
     
     
-    if(score>0) {
-        score_string = "Score : " + String(score);
-        lcd.drawText(200, 20, score_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
-    }
+  
+    lcd.drawText(220, 20, score_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
+    lcd.drawText(20, 20, level_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
+    
   
     input_str = "";
     input_char = '\0';
 
-    while ((input_str.length() < random_str.length())) {
+    while ((input_str.length() < random_str.length()) && (millis()-timer<60000)) {
       if (keyboard.available()) {
         input_char = keyboard.read();
 
@@ -115,6 +126,8 @@ void loop() {
           input_str=input_str.substring(0,input_str.length()-2);
           lcd.fillScreen(RGB(255,  255,  255));
           lcd.drawText(100, 80, "PLEASE TYPE", 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
+          lcd.drawText(220, 20, score_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
+          lcd.drawText(20, 20, level_string, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
         }
       
         lcd.drawText(100, 110, input_str, 1,  RGB(255,  255,  255),  RGB(0,  0,  0));
